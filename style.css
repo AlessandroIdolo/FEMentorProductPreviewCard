@@ -1,0 +1,173 @@
+/* * {
+	box-sizing: border-box;
+}
+
+[class*="col-"]{  
+	width: 100%;
+}
+
+@media only screen and (min-width: 600px){ 
+	.col-s-1{width: 8.33%}
+	.col-s-2{width: 16.66%}
+	.col-s-3{width: 25%}
+	.col-s-4{width: 33.33%}
+	.col-s-5{width: 41.66%}
+	.col-s-6{width: 50%}
+	.col-s-7{width: 58.33%}
+	.col-s-8{width: 66.66%}
+	.col-s-9{width: 75%}
+	.col-s-10{width: 83.33%}
+	.col-s-11{width: 91.66%}
+	.col-s-12{width: 100%}
+}
+
+
+@media only screen and (min-width: 768px){ 
+	.col-1{width: 8.33%}
+	.col-2{width: 16.66%}
+	.col-3{width: 25%}
+	.col-4{width: 33.33%}
+	.col-5{width: 41.66%}
+	.col-6{width: 50%}
+	.col-7{width: 58.33%}
+	.col-8{width: 66.66%}
+	.col-9{width: 75%}
+	.col-10{width: 83.33%}
+	.col-11{width: 91.66%}
+	.col-12{width: 100%}
+} */
+
+body {
+    background-color: hsl(30, 38%, 92%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	font-family: Montserrat;
+}
+
+
+
+@font-face {
+font-family: Montserrat;
+src: url(Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+font-family: Fraunces;
+src: url(Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+
+
+
+
+@media (max-width: 767px) {
+	
+	.carta {
+	border: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;		
+	transform: translate(-50%,-50%);			
+	width: 90%;
+	border-radius: 20px;
+	}
+
+	.img-container{
+		background-image: url(images/image-product-mobile.jpg);
+		background-size: cover;
+		height: 20rem;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+
+	}
+
+}
+
+@media (min-width: 768px){
+
+
+
+	.carta {
+		border: none;
+		width: 45rem;
+		border-radius: 20px;  
+
+		position: absolute;
+		left: 50%;
+		top: 50%;		
+		transform: translate(-50%,-50%);			
+	
+	}
+	
+	.img-container{
+		background-image: url(images/image-product-desktop.jpg);
+		background-size: cover;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+	}
+
+}
+
+
+.card-title{
+	font-family: Fraunces;
+	font-size: 40px;
+	color: hsl(212, 21%, 14%);
+
+}
+
+.card-body{
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 2rem;
+	font-family: Montserrat;
+	font-size: 14px;
+
+}
+
+
+.price{
+	color: hsl(158, 36%, 37%);
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Fraunces;
+}
+
+.sconto{
+	font-size: 14px;
+}
+
+.card-body-button{
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+}
+
+.btn{
+	background-color: hsl(158, 36%, 37%);
+	color: white;
+	font-family: Montserrat;
+	font-weight: bold;
+	border: none;
+	width: 80%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+
+}
+
+.btn:hover{
+	background-color: hsl(158, 27%, 18%) !important;
+	color: white;
+	font-family: Montserrat;
+	font-weight: bold;
+	border: none;
+	
+}
+
