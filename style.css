@@ -38,7 +38,7 @@
 } */
 
 body {
-    background-color: hsl(30, 38%, 92%);
+	background-color: hsl(30, 38%, 92%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -49,125 +49,288 @@ body {
 
 
 @font-face {
-font-family: Montserrat;
-src: url(Montserrat-VariableFont_wght.ttf);
+	font-family: Montserrat;
+	src: url(Montserrat-VariableFont_wght.ttf);
 }
+
 @font-face {
-font-family: Fraunces;
-src: url(Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+	font-family: Fraunces;
+	src: url(Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
 }
 
+/*
+------------------------ MOBILE ----------------------------
+*/
 
-
-
-
-@media (max-width: 767px) {
-	
+@media (min-width:220px) and (max-width:419px) {
 	.carta {
-	border: none;
-	position: absolute;
-	left: 50%;
-	top: 50%;		
-	transform: translate(-50%,-50%);			
-	width: 90%;
-	border-radius: 20px;
+		border: none;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 90%;
+		border-radius: 20px;
 	}
 
-	.img-container{
+	.img-container {
 		background-image: url(images/image-product-mobile.jpg);
 		background-size: cover;
+		background-position: center;
 		height: 20rem;
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
 
 	}
 
+	.card-title {
+		font-family: Fraunces;
+		font-size: 18px;
+		color: hsl(212, 21%, 14%);
+
+	}
+
+	.card-body {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		padding-top: 2rem;
+		font-family: Montserrat;
+		font-size: 10px;
+
+	}
+
+
+	.price {
+		color: hsl(158, 36%, 37%);
+		font-size: 16px;
+		font-weight: bold;
+		font-family: Fraunces;
+	}
+
+	.sconto {
+		font-size: 10px;
+	}
+
+	.card-body-button {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+	}
+
+	.btn {
+		background-color: hsl(158, 36%, 37%);
+		color: white;
+		font-family: Montserrat;
+		font-weight: bold;
+		font-size: 14px;
+		border: none;
+		width: 80%;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+
+	}
+
+	.btn:hover {
+		background-color: hsl(158, 27%, 18%) !important;
+		color: white;
+		font-family: Montserrat;
+		font-weight: bold;
+		border: none;
+
+	}
+
+
+
 }
 
-@media (min-width: 768px){
+
+
+
+
+/*
+------------------------- TABLET ------------------------------------
+*/
+
+
+@media (min-width:419px) and (max-width:767px) {
+
+	.carta {
+		border: none;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 70%;
+		border-radius: 20px;
+	}
+
+	.img-container {
+		background-image: url(images/image-product-mobile.jpg);
+		background-size: cover;
+		background-position: center;
+		height: 20rem;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+
+	}
+
+	.card-title {
+		font-family: Fraunces;
+		font-size: 40px;
+		color: hsl(212, 21%, 14%);
+
+	}
+
+	.card-body {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		padding-top: 2rem;
+		font-family: Montserrat;
+		font-size: 14px;
+
+	}
+
+
+	.price {
+		color: hsl(158, 36%, 37%);
+		font-size: 36px;
+		font-weight: bold;
+		font-family: Fraunces;
+	}
+
+	.sconto {
+		font-size: 14px;
+	}
+
+	.card-body-button {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+	}
+
+	.btn {
+		background-color: hsl(158, 36%, 37%);
+		color: white;
+		font-family: Montserrat;
+		font-weight: bold;
+		border: none;
+		width: 80%;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+
+	}
+
+	.btn:hover {
+		background-color: hsl(158, 27%, 18%) !important;
+		color: white;
+		font-family: Montserrat;
+		font-weight: bold;
+		border: none;
+
+	}
+
+}
+
+
+/*
+----------------------------  DESKTOP ------------------------------------
+*/
+
+@media (min-width: 768px) {
 
 
 
 	.carta {
 		border: none;
 		width: 45rem;
-		border-radius: 20px;  
+		border-radius: 20px;
 
 		position: absolute;
 		left: 50%;
-		top: 50%;		
-		transform: translate(-50%,-50%);			
-	
+		top: 50%;
+		transform: translate(-50%, -50%);
+
 	}
-	
-	.img-container{
+
+	.img-container {
 		background-image: url(images/image-product-desktop.jpg);
 		background-size: cover;
+		background-position: center;
 		border-top-left-radius: 20px;
 		border-bottom-left-radius: 20px;
 	}
 
+	.card-title {
+		font-family: Fraunces;
+		font-size: 40px;
+		color: hsl(212, 21%, 14%);
+
+	}
+
+	.card-body {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		padding-top: 2rem;
+		font-family: Montserrat;
+		font-size: 14px;
+
+	}
+
+
+	.price {
+		color: hsl(158, 36%, 37%);
+		font-size: 36px;
+		font-weight: bold;
+		font-family: Fraunces;
+	}
+
+	.sconto {
+		font-size: 14px;
+	}
+
+	.card-body-button {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+	}
+
+	.btn {
+		background-color: hsl(158, 36%, 37%);
+		color: white;
+		font-family: Montserrat;
+		font-weight: bold;
+		border: none;
+		width: 80%;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+
+	}
+
+	.btn:hover {
+		background-color: hsl(158, 27%, 18%) !important;
+		color: white;
+		font-family: Montserrat;
+		font-weight: bold;
+		border: none;
+
+	}
+
 }
-
-
-.card-title{
-	font-family: Fraunces;
-	font-size: 40px;
-	color: hsl(212, 21%, 14%);
-
-}
-
-.card-body{
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-top: 2rem;
-	font-family: Montserrat;
-	font-size: 14px;
-
-}
-
-
-.price{
-	color: hsl(158, 36%, 37%);
-	font-size: 36px;
-	font-weight: bold;
-	font-family: Fraunces;
-}
-
-.sconto{
-	font-size: 14px;
-}
-
-.card-body-button{
-	
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-
-}
-
-.btn{
-	background-color: hsl(158, 36%, 37%);
-	color: white;
-	font-family: Montserrat;
-	font-weight: bold;
-	border: none;
-	width: 80%;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-
-}
-
-.btn:hover{
-	background-color: hsl(158, 27%, 18%) !important;
-	color: white;
-	font-family: Montserrat;
-	font-weight: bold;
-	border: none;
-	
-}
-
