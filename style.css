@@ -109,6 +109,7 @@ body {
 
 	.sconto {
 		font-size: 10px;
+		vertical-align: 30%;
 	}
 
 	.card-body-button {
@@ -206,6 +207,7 @@ body {
 
 	.sconto {
 		font-size: 14px;
+		vertical-align: 60%;
 	}
 
 	.card-body-button {
@@ -298,6 +300,7 @@ body {
 
 	.sconto {
 		font-size: 14px;
+		vertical-align: 60%;
 	}
 
 	.card-body-button {
